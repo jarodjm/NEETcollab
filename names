@@ -1,0 +1,11 @@
+#! /bin/bash
+
+mlt() {
+	echo 'Michael Trigoboff'
+}
+
+run() {
+	mlt
+}
+
+run
