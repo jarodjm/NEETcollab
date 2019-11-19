@@ -5,12 +5,17 @@ mlt() {
 }
 
 ejl() {
-	echo 'Smelli Landinski'
+	echo 'Eli Ladizinsky'
+}
+
+jjm() {
+	echo 'Jarod Marshall'
 }
 
 run() {
 	mlt
 	ejl
+	jjm
 }
 
 run

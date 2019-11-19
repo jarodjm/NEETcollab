@@ -1,3 +1,17 @@
-alexa
-sicko mod
-NOW
+#! /bin/bash
+
+printf "Alexa, "
+read com
+
+case $com in
+	"play despacito")
+		for i in {1..100}
+		do
+			printf "*spanish noises*\n"
+			sleep 1
+		done
+		;;
+	*)
+		printf "ALEXA DOES NOT UNDERSTAND. ABORT"
+		;;
+esac
