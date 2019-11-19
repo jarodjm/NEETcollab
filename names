@@ -4,8 +4,13 @@ mlt() {
 	echo 'Michael Trigoboff'
 }
 
+ejl() {
+	echo 'Smelli Landinski'
+}
+
 run() {
 	mlt
+	ejl
 }
 
 run
