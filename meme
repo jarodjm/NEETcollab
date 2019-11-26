@@ -2,13 +2,69 @@
 
 printf "Alexa, "
 read com
+count=0
+ti=2
+space=1
+
+set() {
+	space=0
+	ti=$1
+}
 
 case $com in
 	"play despacito")
 		for i in {1..261}
 		do
+			if (( $space % $ti == 0 )) 
+			then
+				case $count in
+				0) echo "ay" ;;
+				1) echo "fonsi" ;;
+				2) echo "DY" ;;
+				3) echo "oh" ;;
+				4) echo "oh no, oh no" 
+					set 3 ;;
+				5) echo "oh yeah" 
+					set 2 ;;
+				6) echo "diridiri diridiri daddy" 
+					set 3;;
+				7) echo "go" 
+					set 2;;
+				8) echo "Sí, sabes que ya llevo un rato mirán"
+					set 3;;
+				9) echo "Tengo que bailar contigo hoy (DY)" ;;
+				10) echo "Vi que tu mirada ya estaba llamándome" ;;
+				11) echo "Muéstrame el camino que yo voy (Oh)" ;;
+				12) echo "Tú, tú eres el imán y yo soy el me" ;;
+				13) echo "Me voy acercando y voy armando el plan" ;;
+				14) echo "Solo con pensarlo se acelera el pulso (Oh yeah)" 
+					set 4;;
+				15) echo "Ya, ya me está gustando más de lo norm"
+					set 3 ;;
+				16) echo "Todos mis sentidos van pidiendo má" ;;
+				17) echo "Esto hay que tomarlo sin ningún apur"
+					set 4;;
+				18) echo "des"
+					set 1;;
+				19) echo "pas";;
+				20) echo "cito"
+					set 3;;
+				21) echo "Quiero respirar tu cuello despacito" ;; 
+				22) echo "Deja que te diga cosas al oío" ;;
+				23) echo "Para que te acuerdes si no estás conmio" ;;
+				24) echo "des"
+				    set 1;;
+				25) echo "pas";;
+				26) echo "cito"
+					set 3;;
+				esac
+				count=$(( $count + 1 ))
+				sleep 1
+			else	
 			printf "*spanish noises*\n"
 			sleep 1
+			fi
+		space=$(( $space + 1 ))
 		done
 		;;
 	*)
