@@ -5,7 +5,7 @@ read com
 
 case $com in
 	"play despacito")
-		for i in {1..100}
+		for i in {1..261}
 		do
 			printf "*spanish noises*\n"
 			sleep 1
